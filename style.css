@@ -76,3 +76,41 @@ img {
 hr {
   margin: 1.6rem 0;
 }
+/* Navigation */
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu a {
+  border-bottom: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-left: 24px;
+}
+.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 786px) {
+  .mobile-menu {
+    display: block;
+    font-size: 2.4rem;
+  }
+  .menu {
+    position: absolute;
+    background-color: #a6a6a6;
+    width: 100%;
+    top: 100%;
+    z-index: 99;
+    display: none;
+  }
+  .menu a {
+    padding: 3.2rem 0;
+    font-size: 1.8rem;
+    display: block;
+  }
+  .show {
+    display: block;
+  }
+}
