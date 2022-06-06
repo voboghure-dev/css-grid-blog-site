@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Playfair+Display:wght@800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root {
+  --primary-color: #202020;
+  --secondary-color: #f4f7fc;
+  --gray: #a6a6a6;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+}
+h1,
+h3,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 1.6rem 0;
+}
+p {
+  font-weight: 400;
+  margin: 1.6rem 0;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+h1 {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+h2 {
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+h3 {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+h4 {
+  font-size: 1.6rem;
+}
+span {
+  color: var(--gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  margin: 1.6rem 0;
+  color: var(--gray);
+  font-size: 1.6rem;
+  border-bottom: 2px dotted var(--primary-color);
+}
+.site-container {
+  width: 80%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+hr {
+  margin: 1.6rem 0;
+}
