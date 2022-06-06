@@ -197,3 +197,34 @@ main {
   text-decoration: none;
   border: 0;
 }
+
+/* Aside */
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+.wrapper .thumb {
+  flex: 1;
+}
+.wrapper .content {
+  flex: 2;
+  padding: 16px;
+}
+.wrapper p,
+span,
+a {
+  font-size: 1.4rem;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .site-container {
+    width: 100%;
+    padding: 0 24px;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    margin: 24px 0;
+  }
+}
