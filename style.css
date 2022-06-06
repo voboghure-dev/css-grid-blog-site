@@ -152,3 +152,32 @@ nav .menu a {
     background-color: #fff;
   }
 }
+
+/* Blog */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 50px;
+  grid-gap: 60px;
+}
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
+}
+.blog .thumbnail {
+  object-fit: contain;
+}
+.blog-post {
+  background-color: var(--secondary-color);
+  margin: 24px 0;
+  padding: 16px;
+}
+.blog-content {
+  margin-top: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
